@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chloé</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="devis.css">
     <script src="index.js" defer></script>
 </head>
 <header>
@@ -14,33 +14,88 @@
 
 <body>
     <form method="POST">
-        <label for="lastname">Nom</label>
+        <label for="lastname">Nom </label>
         <input type="text" name="lastname" id="lastname">
 
-        <label for="firstname">Prénom</label>
+
+        <label for="firstname">Prénom </label>
         <input type="text" name="firstname" id="firstname">
 
-        <label for="adresse">Adresse</label>
-        <input type="text" name="adresse" id="adresse">
 
-        <label for="date">Date souhaitée du projet</label>
-        <input type="text" name="date" id="date">
+        <label for="adresse">Adresse </label>
+        <input type="text" name="adresse" id="adresse">
 
         <label for="etage">Etage</label>
         <input type="text" name="etage" id="etage">
 
+
+        <span>Ascenseur:</span>
+
+        <label for="oui">Oui
+            <input type="radio" name="ascenseur" id="oui" />
+        </label>
+
+        <label for="non">Non
+            <input type="radio" name="ascenseur" id="non" />
+        </label>
+
+
+        <label for="date">Date souhaitée du projet</label>
+        <input type="text" name="date" id="date">
+
         <label for="surface_totale">Surface totale en m²</label>
         <input type="text" name="surface_totale" id="surface_totale">
 
-        <label for="surface_mur">Surface des murs</label>
+
+        <label for="surface_mur">Surface des murs </label>
         <input type="text" name="surface_mur" id="surface_mur">
 
-        <label for="surface_sol">Surface du sol</label>
+
+        <label for="surface_sol">Surface du sol </label>
         <input type="text" name="surface_sol" id="surface_sol">
 
-        <label for="support">Type de support</label>
-        <input type="text" name="support" id="support">
 
+        <p>Type de support:</p>
+
+        <div class="checkbox">
+            <div class="checkbox-label ">
+
+                <label for="carrelage">Carrelage
+                    <!-- <input type="checkbox" name="support" id="carrelage" /> -->
+                </label>
+
+                <label for="placo">Placo
+                    <!-- <input type="checkbox" name="support" id="placo" /> -->
+                </label>
+
+                <label for="mur pierre">Mur en pierre
+                    <!-- <input type="checkbox" name="support" id="mur en pierre" /> -->
+                </label>
+
+                <label for="chape anhydrite">Chape anhydrite
+                    <!-- <input type="checkbox" name="support" id="chape anhydrite" /> -->
+                </label>
+
+                <label for="chape ciment">Chape ciment
+
+                    <!-- <input type="checkbox" name="support" id="chape ciment" /> -->
+                </label>
+
+                <label for="support">Autre
+                    <!-- <input type="text" name="support" id="support"> -->
+                </label>
+            </div>
+
+            <div class="box">
+                <input type="checkbox" name="support" id="carrelage" />
+                <input type="checkbox" name="support" id="placo" />
+                <input type="checkbox" name="support" id="mur en pierre" />
+                <input type="checkbox" name="support" id="chape anhydrite" />
+                <input type="checkbox" name="support" id="chape ciment" />
+                <input type="text" name="support" id="support">
+            </div>
+        </div>
+        <button type="button" name="valider">Valider</button>
     </form>
 </body>
 
